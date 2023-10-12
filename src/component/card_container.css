@@ -1,0 +1,48 @@
+.card-container {
+    width: 850px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1em;
+    margin: auto;
+}
+
+.card-container p {
+    color: white;
+    font-size: 2rem;
+}
+
+.play-button {
+    color: white;
+    background-color: black;
+    font-size: 1.4rem;
+    padding: 16px;
+}
+
+.button {
+    margin-top: -117px;
+    margin-bottom: 47px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        width: 85%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    .card-container p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .play-button {
+        font-size: 1.2rem;
+        margin-top: 21px;
+    }
+
+    .button {
+        margin-top: -20px;
+        margin-left: 0;
+    }
+}
